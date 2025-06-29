@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Central de Vendas Remove Japan</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    .container img {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #d10000;
+      margin-bottom: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background: #d10000;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      width: 100%;
+    }
+    button:hover {
+      background: #a00000;
+      transform: translateY(-2px);
+    }
+    p {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="imagens/logo-remove-japan.png" alt="Logo Remove Japan" />
+    <h2>Central de Vendas Remove Japan</h2>
+    <form id="whatsappForm" onsubmit="redirectWhatsApp(event)">
+      <input type="text" id="nome" placeholder="Digite seu nome" required />
+      <button type="submit">Iniciar conversa</button>
+    </form>
+    <p>Atendimento exclusivo via WhatsApp</p>
+  </div>
+
+  <script>
+    function redirectWhatsApp(event) {
+      event.preventDefault();
+      const nome = document.getElementById('nome').value.trim();
+
+      if (nome === "") {
+        alert("Por favor, informe seu nome.");
+        return;
+      }
+
+      const mensagem = encodeURIComponent(`Olá, meu nome é ${nome}. Gostaria de mais informações sobre o Remove Japan!`);
+      const link = `https://wa.me/31972651589?text=${mensagem}`;
+      
+      window.location.href = link;
+    }
+  </script>
+</body>
+</html>
