@@ -1,107 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
- <!-- TikTok Pixel Code Start -->
-<script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-
-
-  ttq.load('D1K0SGBC77U5IDGMFGN0');
-  ttq.page();
-}(window, document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
-  
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Central de Vendas Remove Japan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mercado Livre - Oferta Especial</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .container {
-      background: #fff;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
-      width: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #ffdb00;
       text-align: center;
+      color: #000;
     }
-    .container img {
-      max-width: 150px;
-      margin-bottom: 20px;
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px;
     }
-    h2 {
-      color: #d10000;
-      margin-bottom: 10px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
     }
-    input {
-      width: 100%;
-      padding: 12px 15px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 20px;
+      color: #333;
     }
-    button {
-      background: #d10000;
-      color: #fff;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.2s;
-      width: 100%;
-    }
-    button:hover {
-      background: #a00000;
-      transform: translateY(-2px);
-    }
+
     p {
-      font-size: 14px;
-      color: #555;
-      margin-top: 10px;
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #3483fa;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2968c8;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="imagens/logo-remove-japan.png" alt="Logo Remove Japan" />
-    <h2>Central de Vendas Remove Japan</h2>
-    <form id="whatsappForm" onsubmit="redirectWhatsApp(event)">
-      <input type="text" id="nome" placeholder="Digite seu nome" required />
-      <button type="submit">Iniciar conversa</button>
-    </form>
-    <p>Atendimento exclusivo via WhatsApp</p>
+    <img src="Captura-de-tela-2024-03-28-105802.png" alt="Mercado Livre - Chegou!">
+    <h1>Compre com segurança no Mercado Livre</h1>
+    <p>Receba seu pedido em casa com agilidade, garantia e o melhor atendimento. Clique abaixo para acessar as melhores ofertas.</p>
+    <a class="btn" href="https://www.mercadolivre.com.br" target="_blank">Aproveitar agora</a>
   </div>
-
-  <script>
-    function redirectWhatsApp(event) {
-      event.preventDefault();
-      const nome = document.getElementById('nome').value.trim();
-
-      if (nome === "") {
-        alert("Por favor, informe seu nome.");
-        return;
-      }
-
-      const mensagem = encodeURIComponent(`Olá, meu nome é ${nome}. Gostaria de mais informações sobre o Remove Japan!`);
-      const link = `https://wa.me/31972651589?text=${mensagem}`;
-      
-      window.location.href = link;
-    }
-  </script>
 </body>
 </html>
